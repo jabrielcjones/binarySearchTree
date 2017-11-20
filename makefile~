@@ -1,0 +1,9 @@
+a.out: binary-search-tree01.o driver.o
+	c++ binary-search-tree01.o driver.o
+
+Polynomial.o: binary-search-tree01.cpp binary-search-tree01.h
+	c++ -c binary-search-tree01.cpp
+
+driver.o: driver.cpp binary-search-tree01.o
+	c++ -c driver.cpp
+
